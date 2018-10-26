@@ -6,12 +6,15 @@ import java.util.Scanner;
 public class Menu {
     public static void main(String[] args) {
 
+        System.out.println(" ");
         System.out.println("----- MAIN MENU -----");
         System.out.println(" ");
         System.out.println("1 - Create a new contact");
         System.out.println("2 - List all contacts");
         System.out.println("3 - Delete contact");
-        System.out.println("4 - Exit Application");
+        System.out.println("4 - Search contact ");
+        System.out.println("5 - Exit Application");
+
         System.out.println(" ");
         System.out.printf("> ");
 
@@ -29,12 +32,29 @@ public class Menu {
                 System.out.println("2 - List all contacts");
             }
 
+            if (s == 3) {
+                System.out.println("3 - Delete contact");
+            }
+
+            if (s == 4) {
+                System.out.println("4 - Search contact ");
+
+            }
+
+            else if (s > 5) {
+                System.out.println("This option does not exist");
+            }
+
+
             System.out.println(" ");
             System.out.println("----- MAIN MENU -----");
             System.out.println(" ");
             System.out.println("1 - Create a new contact");
             System.out.println("2 - List all contacts");
-            System.out.println("3 - Exit Application");
+            System.out.println("3 - Delete contact");
+            System.out.println("4 - Search contact ");
+            System.out.println("5 - Exit Application");
+
             System.out.println(" ");
             System.out.printf("> ");
 
@@ -43,7 +63,9 @@ public class Menu {
 
         }
 
-        while (s != 3);
+        while (s != 5);
+        System.out.println(" ");
+        System.out.println("Turning application off...");
 
 
 
