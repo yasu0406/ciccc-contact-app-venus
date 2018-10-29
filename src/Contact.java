@@ -4,10 +4,11 @@ public class Contact {
     private String email;
     private String street;
     private int sin;
-    private int[] celphone;
+    private int celphone;
 
     // Constructor
-    public Contact(String userName, String email, String street, int sin, int[] celphone) {
+    public Contact(String userName, String email, String street, int sin, int celphone) {
+        // Parameter
         this.userName = userName;
         this.email = email;
         this.street = street;
@@ -52,11 +53,11 @@ public class Contact {
         this.sin = sin;
     }
 
-    public int[] getCelphone() {
+    public int getCelphone() {
         return celphone;
     }
 
-    public void setCelphone(int[] celphone) {
+    public void setCelphone(int celphone) {
         this.celphone = celphone;
     }
 }

@@ -1,3 +1,4 @@
+import java.lang.reflect.Array;
 import java.util.Scanner;
 
 /**
@@ -31,11 +32,14 @@ public class Menu {
 
         do {
 
+            Scanner Cont = new Scanner(System.in);
 
             if (s == 1) {
                 // Create a new contact
                 System.out.println(" ");
                 System.out.println("--------- CONTACT CREATION ---------");
+                System.out.println(" ");
+                System.out.println(" ");
 
 
             }
@@ -44,6 +48,18 @@ public class Menu {
                 // List of all contacts
                 System.out.println(" ");
                 System.out.println("--------- CONTACT LIST ---------");
+                System.out.println(" ");
+                System.out.println(" ");
+
+                Contact c001 = new Contact("name 1", "email@1.com","noStreet",1231231234,0120120123);
+                System.out.println("01");
+                System.out.println("------------------------------------");
+                System.out.println("Name: " + c001.getUserName());
+                System.out.println("E-mail: " + c001.getEmail());
+                System.out.println("Street: " + c001.getStreet());
+                System.out.println("Sin: " + c001.getSin());
+                System.out.println("Cellphone: " + c001.getCelphone());
+                System.out.println("-------------------------------------");
             }
 
             if (s == 3) {
